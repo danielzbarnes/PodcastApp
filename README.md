@@ -1,2 +1,3 @@
 # PodcastApp
- A simple podcast app to play podcasts from an rss feed
+Work in progress.
+A simple podcast app to play and download podcasts from an rss feed
