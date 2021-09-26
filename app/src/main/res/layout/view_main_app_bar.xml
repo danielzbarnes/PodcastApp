@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_app_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="toolbar(appbar layout)"
+        android:background="@color/primary_vibrant">
+
+        <TextView
+            style="@style/Theme.PodcastApp.AppBar"
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_toolbar_title" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>
