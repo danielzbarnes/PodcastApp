@@ -6,7 +6,7 @@ import android.content.Intent
 import android.net.ConnectivityManager
 import android.util.Log
 
-private const val TAG = "PodcastConnReceiver"
+private const val TAG = "ConnectionReceiver"
 
 class ConnectionReceiver(): BroadcastReceiver() {
 
