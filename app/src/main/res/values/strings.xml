@@ -10,4 +10,16 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="label_toolbar_title">Toolbar Title</string>
+    <string name="placeholder_title">Placeholder Title</string>
+    <string name="placeholder_no_network">No Network Placeholder Message</string>
+    <string name="label_retry">retry btn</string>
+    <string name="desc_no_connection_image">No network connection image.</string>
+    <string name="desc_podcast_image">podcast image</string>
+    <string name="placeholder_time">00:00:00</string>
+    <string name="desc_rewind_button">rewind 15 seconds button</string>
+    <string name="desc_play_button">play button</string>
+    <string name="desc_pause_button">pause button</string>
+    <string name="desc_fast_forward_button">fast forward 15 seconds button</string>
+
 </resources>
