@@ -14,6 +14,7 @@ import android.util.Log
 import androidx.core.app.NotificationCompat
 import com.danielzbarnes.podcastapp.R
 import com.danielzbarnes.podcastapp.database.Podcast
+import com.danielzbarnes.podcastapp.player.PodcastPlayFragment
 import com.danielzbarnes.podcastapp.repository.DownloadRepository
 import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.Player
@@ -180,6 +181,22 @@ class PodcastPlayService: Service() {
         url = podcastBundle.getString("podcast_url")!!
         title = podcastBundle.getString("podcast_title")!!
         reference = podcastBundle.getString("podcast_ref")!!
+    }
+
+    private fun tempPodcastObj(podcast: Podcast){
+        podcastId = podcast.id
+        title = podcast.title
+        reference = podcast.reference
+        url = podcast.url
+    }
+
+    fun updatePlayer(podcast: Podcast){
+        tempPodcastObj(podcast)
+        val mediaItem = MediaItem.fromUri(url)
+        exoPlayer!!.apply {
+            setMediaItem(mediaItem)
+            playWhenReady = true
+        }
     }
 
     private fun releasePlayer(){
