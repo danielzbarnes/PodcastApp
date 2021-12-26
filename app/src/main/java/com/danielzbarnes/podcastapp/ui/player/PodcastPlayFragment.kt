@@ -1,4 +1,4 @@
-package com.danielzbarnes.podcastapp.player
+package com.danielzbarnes.podcastapp.ui.player
 
 import android.content.ComponentName
 import android.content.Context
@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.danielzbarnes.podcastapp.database.Podcast
 import com.danielzbarnes.podcastapp.databinding.FragmentPodcastPlayBinding
-import com.danielzbarnes.podcastapp.details.PodcastDetailViewModel
+import com.danielzbarnes.podcastapp.ui.details.PodcastDetailViewModel
 import com.danielzbarnes.podcastapp.network.NetworkUtils
 import com.danielzbarnes.podcastapp.services.PodcastPlayService
 import com.google.android.exoplayer2.ui.PlayerControlView
@@ -32,8 +32,7 @@ class PodcastPlayFragment : Fragment() {
 
     private var connectionStatus: Boolean = NetworkUtils.NetworkStatus.isConnected
 
-    private fun getPodcastRef(): String =
-        PodcastUtils.getScriptureText(podcast.reference, podcast.series)
+//    private fun getPodcastRef(): String = PodcastUtils.getScriptureText(podcast.reference, podcast.series)
 
     private val connection = object : ServiceConnection {
 
@@ -73,7 +72,6 @@ class PodcastPlayFragment : Fragment() {
         return binding.root
     }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         podcastDetailViewModel.podcastLiveData.observe(viewLifecycleOwner) { podcast ->
@@ -100,5 +98,4 @@ class PodcastPlayFragment : Fragment() {
     private fun unBindService() {
         requireActivity().unbindService(connection)
     }
-
 }
