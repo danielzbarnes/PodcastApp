@@ -14,7 +14,7 @@ import android.util.Log
 import androidx.core.app.NotificationCompat
 import com.danielzbarnes.podcastapp.R
 import com.danielzbarnes.podcastapp.database.Podcast
-import com.danielzbarnes.podcastapp.player.PodcastPlayFragment
+import com.danielzbarnes.podcastapp.ui.player.PodcastPlayFragment
 import com.danielzbarnes.podcastapp.repository.DownloadRepository
 import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.Player
