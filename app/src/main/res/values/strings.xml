@@ -22,5 +22,6 @@
     <string name="desc_fast_forward_button">fast forward 15 seconds button</string>
     <string name="label_item_date">MM DD</string>
     <string name="label_item_year">YYYY</string>
+    <string name="placeholder_remove_all_downloads">Temporary Remove All Downloads</string>
 
 </resources>
