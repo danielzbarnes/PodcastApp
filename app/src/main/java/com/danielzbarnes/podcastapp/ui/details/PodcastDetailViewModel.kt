@@ -1,4 +1,4 @@
-package com.danielzbarnes.podcastapp.details
+package com.danielzbarnes.podcastapp.ui.details
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -25,6 +25,4 @@ class PodcastDetailViewModel: ViewModel() {
     fun isPodcastCached(url: String): Boolean{
         return downloadRepository.getDownloads().contains(url)
     }
-
-
 }
